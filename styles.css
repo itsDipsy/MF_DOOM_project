@@ -137,3 +137,232 @@ article {
     justify-self: center;
     align-self: center;
 }
+
+.album_data>div:nth-child(2) {
+    font-size: 15px;
+}
+
+.album_data h1 {
+    font-size: 33px;
+}
+
+.album_data h2 {
+    font-size: 21px;
+}
+
+.album_data>div:nth-child(1) {
+    margin-bottom: 50px;
+}
+
+.album_data>div:nth-child(2) {}
+
+.album_description {
+    margin-top: 50px;
+}
+
+.album_description p {
+    margin-top: 70px;
+    margin-right: 10px;
+}
+
+
+
+.song_list {
+    display: flex;
+    grid-column: 2/3;
+    color: white;
+    width: 100%;
+    height: 85%;
+    justify-self: center;
+    gap: 10px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.song_list div {
+    width: 100%;
+    background-color: red;
+    font-size: 13px;
+    justify-self: end;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+    padding-left: 1vw;
+}
+
+.song_list>:nth-child(1) {
+    border-radius: 0 0 0px 20px;
+}
+
+.song_list>:nth-child(2) {
+    border-radius: 0 0 20px 0px;
+}
+
+.song_list div h2 {
+    margin: 0;
+    width: 100%;
+}
+
+.song_list div ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    list-style: decimal;
+}
+
+
+.anecdotes {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+
+.anecdotes li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 2.5vw;
+    font-size: 16px;
+    background-color: purple;
+}
+
+#are_you_experienced .anecdotes li:nth-child(2) {
+    display: none;
+}
+
+#are_you_experienced .anecdotes li:nth-child(4) {
+    display: none;
+}
+
+#are_you_experienced .anecdotes li:nth-child(5) {
+    display: none;
+}
+
+#are_you_experienced .two_wide {
+    grid-column: 3/5;
+    border-radius: 20px 20px 20px 0px;
+}
+
+#are_you_experienced .top_right_90 {
+    grid-column: 1/2;
+    border-radius: 20px 0px 20px 20px;
+}
+
+#are_you_experienced .image {
+    background-image: url("./assets/background.webp");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: rgb(35, 211, 85);
+    border-radius: 0px 20px 20px 20px;
+}
+
+#are_you_experienced .bottom_right_90 {
+    grid-column: 6/7;
+    border-radius: 20px 20px 0px 20px;
+}
+
+#axis_bold_as_love .anecdotes li:nth-child(3) {
+    display: none;
+}
+
+#axis_bold_as_love .anecdotes li:nth-child(4) {
+    display: none;
+}
+
+
+#axis_bold_as_love .anecdotes li:nth-child(2) {
+    grid-column: 6/7;
+}
+
+#axis_bold_as_love .two_wide {
+    grid-column: 1/3;
+    border-radius: 20px 20px 20px 0px;
+}
+
+
+#axis_bold_as_love .bottom_right_90 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 0px 20px 20px 20px;
+}
+
+#axis_bold_as_love .image {
+    grid-column: 4/6;
+    grid-row: 1/2;
+    background-image: url("./assets/album1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    color: yellow;
+    border-radius: 0px 20px 20px 20px;
+}
+
+
+#axis_bold_as_love .anecdotes>li:nth-child(2) {
+    grid-column: 6/7;
+    grid-row: 1/2;
+    border-radius: 20px 20px 0px 20px;
+}
+
+@media (max-width:1111px) {
+    .album_description p {
+        font-size: 1.4vw;
+    }
+
+    .album_data>div:nth-child(2) {
+        font-size: 1.4vw;
+    }
+
+    .album_data h1 {
+        font-size: 3vw;
+    }
+
+    .album_data h2 {
+        font-size: 2vw;
+    }
+
+    .song_list div h2 {
+        font-size: 1.8vw;
+    }
+
+    .song_list div ul {
+        font-size: 1.2vw;
+    }
+
+    .anecdotes>:nth-child(1) {
+        font-size: 1.5vw;
+    }
+
+    .anecdotes>:nth-child(2) {
+        font-size: 1.5vw;
+    }
+
+    .anecdotes>:nth-child(3) {
+        font-size: 1.5vw;
+    }
+
+    .anecdotes>:nth-child(4) {
+        font-size: 1.5vw;
+    }
+
+    .anecdotes>:nth-child(6) {
+        font-size: 1.5vw;
+    }
+
+    .anecdotes>:nth-child(7) {
+        font-size: 1.5vw;
+    }
+
+}
